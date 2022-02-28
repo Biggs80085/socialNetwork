@@ -1,0 +1,335 @@
+:root {
+    --vert: rgb(23, 191, 99);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgroundMode);
+}
+
+header {
+    position: fixed;
+    background-color: var(--color4);
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px;
+    width: 100%;
+    height: 15px;
+    z-index: 1;
+    box-shadow: 0px 1px 3px lightgrey;
+}
+
+.active2 {
+    transition: 0.5s;
+    background-color: var(--vert);
+}
+
+article {
+    position: absolute;
+    top: 8.5%;
+    height: 91.5%;
+    width: 55%;
+    left: 18.5%;
+}
+
+
+/*******************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+::selection {
+    color: #fff;
+    background: #664AFF;
+}
+
+.search-box {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    left: 75%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, .2);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.search-box.active {
+    width: 250px;
+}
+
+.search-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50px;
+    background: #fff;
+    outline: none;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.search-box input.active {
+    opacity: 1;
+}
+
+.search-box input::placeholder {
+    color: #a6a6a6;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-size: 18px;
+}
+
+.search-box .search-icon.active {
+    right: 2px;
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+    font-size: 20px;
+    background: var(--vert);
+    color: #f5f5ef;
+    transform: translateY(-50%) rotate(360deg);
+    font-size: 14px;
+}
+
+.search-box .cancel-icon {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.search-box .cancel-icon.active {
+    right: -20px;
+    transform: translateY(-50%) rotate(360deg);
+}
+
+.search-box .search-data {
+    text-align: center;
+    padding-top: 7px;
+    color: #fff;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+
+/*----------------------------------------------*/
+
+.publication {
+    position: relative;
+    margin-top: 15px;
+    height: auto;
+    min-height: 30%;
+    max-height: 300%;
+    width: 89%;
+    background-color: var(--color1);
+    left: 10%;
+    border: none;
+    border-radius: 13px;
+    word-break: break-word;
+}
+
+.user_pub {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 65px;
+    background: transparent;
+}
+
+.user_photo_pub {
+    position: relative;
+    top: 10px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.user_name_pub {
+    position: absolute;
+    left: 10%;
+    top: 16px;
+    color: black;
+}
+
+.user_date_pub {
+    position: absolute;
+    left: 10%;
+    top: 27px;
+    font-size: 10px;
+    color: grey;
+}
+
+.user_pub_text {
+    position: relative;
+    top: 30px;
+    left: 10%;
+    width: 85%;
+    margin-bottom: 70px;
+    word-break: break-word;
+}
+
+.user_pub_img {
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+    height: 47%;
+    width: 80%;
+    left: 10%;
+    border-radius: 20px;
+}
+
+.user_pub_separateur {
+    position: relative;
+    bottom: 10px;
+    left: 10%;
+    width: 80%;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 2px 0px lightgray;
+}
+
+.user_pub_nbjaime {
+    position: relative;
+    bottom: 0px;
+    left: 15%;
+    width: 40px;
+    height: 15px;
+    background: transparent;
+}
+
+.user_pub_nbjaime:focus {
+    outline: none;
+}
+
+.user_pub_nbjaime img {
+    position: absolute;
+    bottom: 3px;
+}
+
+.user_pub_nbjaime p {
+    position: absolute;
+    right: 7px;
+    top: -18px;
+}
+
+.user_pub_nbcommentaire {
+    position: relative;
+    bottom: 15px;
+    left: 70%;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background: transparent;
+}
+
+.user_pub_nbcommentaire:focus {
+    outline: none;
+}
+
+.user_pub_nbcommentaire img {
+    position: relative;
+    right: 4px;
+    bottom: 3px;
+}
+
+.user_pub_nbcommentaire p {
+    position: absolute;
+    right: -10px;
+    top: -20px;
+}
+
+.like {
+    position: relative;
+    bottom: -55px;
+    left: 11%;
+    width: 65px;
+    height: 25px;
+    border: none;
+    background: transparent;
+}
+
+.like:focus {
+    outline: none;
+}
+
+.like img {
+    position: relative;
+    left: -25px;
+}
+
+.like p {
+    position: relative;
+    top: -35px;
+    left: 10px;
+}
+
+.unlike {
+    position: relative;
+    bottom: -55px;
+    left: 11%;
+    width: 65px;
+    height: 25px;
+    border: none;
+    background: transparent;
+}
+
+.unlike:focus {
+    outline: none;
+}
+
+.unlike img {
+    position: relative;
+    left: -25px;
+}
+
+.unlike p {
+    position: relative;
+    top: -35px;
+    left: 10px;
+    color: var(--vert);
+}
+
+.user_pub_commentaire {
+    position: relative;
+    bottom: 5px;
+    margin-left: 300px;
+    width: 125px;
+    height: 25px;
+    border: none;
+    background: transparent;
+}
+
+.user_pub_commentaire img {
+    position: relative;
+    left: -50px;
+}
+
+.user_pub_commentaire p {
+    position: relative;
+    top: -35px;
+    left: 10px;
+    color: black;
+}
+
+.user_pub_commentaire a {
+    text-decoration: none;
+}

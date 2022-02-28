@@ -1,0 +1,161 @@
+html {
+    background-color: #e9e9e9;
+}
+
+#header {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 60px;
+    background-color: #2196f3;
+    box-shadow: 0px 1px 3px lightgrey;
+}
+
+#def {
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    line-height: 1rem;
+}
+
+.back {
+    position: absolute;
+    top: 35%;
+    left: 50px;
+    width: 600px;
+    height: 375px;
+}
+
+#id {
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    right: 200px;
+    transform: translateY(50%);
+}
+
+#id>h2 {
+    margin: 0 auto;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__div {
+    position: relative;
+    height: 48px;
+    margin-bottom: 1.5rem;
+}
+
+.form__input {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 85%;
+    height: 10px;
+    font-size: 1rem;
+    border: 1px solid #0077b6;
+    border-radius: .5rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    z-index: 1;
+}
+
+.form__label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0 .25rem;
+    background-color: #e9e9e9;
+    color: #80868B;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+
+/*Input focus move up label*/
+
+.form__input:focus+.form__label {
+    top: -.2rem;
+    left: .8rem;
+    color: #1A73E8;
+    font-size: .75rem;
+    font-weight: 500;
+    z-index: 10;
+}
+
+
+/*Input focus sticky top label*/
+
+.form__input:not(:placeholder-shown).form__input:not(:focus)+.form__label {
+    top: -.2rem;
+    left: .8rem;
+    font-size: .75rem;
+    font-weight: 500;
+    z-index: 10;
+}
+
+
+/*Input focus*/
+
+.form__input:focus {
+    border: 1.5px solid #1A73E8;
+}
+
+
+/* Button style */
+
+.rippel {
+    position: absolute;
+    top: 68%;
+    left: 28%;
+    border: none;
+    width: 45%;
+    border-radius: 40px;
+    padding: 12px;
+    font-family: 'Hammersmith One', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: #2196f3;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    margin: 0 auto;
+}
+
+#l-ins {
+    font-family: 'Hammersmith One', sans-serif;
+    color: rgb(4, 187, 74);
+}
+
+.inscription {
+    position: absolute;
+    top: 80%;
+    left: 27%;
+}
+
+#restor {
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    font-family: 'Hammersmith One', sans-serif;
+    color: #1A73E8;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.save {
+    position: absolute;
+    top: 58%;
+    right: 56%;
+    font-size: 14px;
+}

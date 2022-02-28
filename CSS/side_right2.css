@@ -1,0 +1,147 @@
+.side_bar_right {
+    position: fixed;
+    top: 7%;
+    right: 0;
+    width: 300px;
+    height: 93%;
+    background: var(--backgroundmode)/*#f5f5ef*/
+    ;
+}
+
+.affiche {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 30%;
+    width: 80%;
+    overflow-y: scroll;
+}
+
+.afficher_contacts_ami1 {
+    position: relative;
+    margin-top: 10px;
+    left: 10%;
+    width: 80%;
+    height: 40px;
+    border: 1px solid var(--vert);
+    border-radius: 30px;
+    background: var(--vert);
+}
+
+.afficher_contacts_ami_img {
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    border-radius: 100%;
+}
+
+.afficher_contacts_ami_name {
+    position: absolute;
+    top: -10%;
+    left: 30%;
+    color: white;
+    font-size: 14px;
+}
+
+.contactImg {
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+
+.Text-contacts {
+    position: absolute;
+    top: 4%;
+    left: 20%;
+    font-size: 17px;
+    color: gray;
+}
+
+.Sear_amis {
+    position: relative;
+    top: 4%;
+    left: 43%;
+    height: 20px;
+    border-radius: 30px;
+    border: none;
+    padding-left: 10px;
+}
+
+.Sear_amis:focus {
+    outline: none
+}
+
+
+/* notification */
+
+.notification_bloc {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 30%;
+}
+
+.notification {
+    position: relative;
+    margin: 10px;
+    left: 5%;
+    width: 90%;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.notificationStyle {
+    position: absolute;
+    bottom: 80px;
+    margin-bottom: 10px;
+    left: 5%;
+    height: 70px;
+    width: 90%;
+    background: var(--vert);
+    border-radius: 40px;
+    z-index: 1;
+}
+
+.infoNotif {
+    position: absolute;
+    left: 17%;
+    top: 18%;
+    height: 65%;
+    width: 73%;
+    border-left: 1px solid white;
+}
+
+.infoNotifType {
+    position: absolute;
+    top: -10px;
+    left: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+
+.infoNotifPerso {
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white
+}
+
+.infoNotifStyle {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.infoNotifStyle img {
+    position: absolute;
+    left: 5px;
+    top: 4px;
+}

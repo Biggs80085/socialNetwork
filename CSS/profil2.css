@@ -1,0 +1,640 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgroundMode);
+}
+
+header {
+    position: fixed;
+    background-color: var(--color4);
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px;
+    width: 100%;
+    height: 15px;
+    z-index: 1;
+    box-shadow: 0px 1px 3px lightgrey;
+}
+
+.active1 {
+    transition: 0.5s;
+    background-color: var(--vert);
+}
+
+article {
+    position: absolute;
+    top: 8.5%;
+    height: 91.5%;
+    width: 55%;
+    left: 18.5%;
+}
+
+
+/*******************************************************************/
+
+
+/*----------------------------------------------*/
+
+.fondProfil {
+    position: relative;
+    top: 0;
+    left: 0;
+    filter: blur(4px);
+}
+
+.imgProfil {
+    position: relative;
+    top: -40px;
+    left: 10%;
+    border-radius: 50%;
+}
+
+.nameProfil {
+    position: relative;
+    margin-top: -90px;
+    left: 22%;
+    font-size: 18px;
+}
+
+.modifier-button {
+    position: relative;
+    top: -40px;
+    left: 670px;
+    border: 1px solid #00cc00;
+    border-radius: 20px;
+    width: 130px;
+    height: 30px;
+    font-size: 12px;
+    color: #00cc00;
+    background: transparent;
+}
+
+.modifier-button:focus {
+    outline: none;
+}
+
+.modifier-button:hover {
+    background: #00cc00;
+    color: white;
+}
+
+.ajoute-button {
+    position: relative;
+    top: -35px;
+    margin-left: 650px;
+    border: 1px solid #00cc00;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    color: #00cc00;
+    background: transparent;
+}
+
+.ajoute-button:focus {
+    outline: none;
+}
+
+.supprimer-button {
+    position: relative;
+    top: -35px;
+    margin-left: 650px;
+    border: 1px solid #00cc00;
+    border-radius: 20px;
+    width: 130px;
+    height: 30px;
+    font-size: 12px;
+    color: #00cc00;
+    background: transparent;
+}
+
+.supprimer-button:focus {
+    outline: none;
+}
+
+.bloque-button {
+    position: relative;
+    top: -65px;
+    margin-left: 550px;
+    border: 1px solid #00cc00;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    color: #00cc00;
+    background: transparent;
+}
+
+.bloque-button:focus {
+    outline: none;
+}
+
+.menuProfil {
+    position: relative;
+    top: -40px;
+    left: 17%;
+    width: 100%;
+}
+
+.menuProfil-posts {
+    position: absolute;
+    top: 46%;
+    left: 5%;
+    font-size: 13px;
+    color: #00cc00;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+}
+
+.menuProfil-posts:focus {
+    outline: none;
+}
+
+.menuProfil-apropos {
+    position: absolute;
+    top: 46%;
+    left: 12%;
+    font-size: 13px;
+    color: #00cc00;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+}
+
+.menuProfil-apropos:focus {
+    outline: none;
+}
+
+.menuProfil-amis {
+    position: absolute;
+    top: 46%;
+    left: 22%;
+    font-size: 13px;
+    color: #00cc00;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+}
+
+.menuProfil-amis:focus {
+    outline: none;
+}
+
+.menuProfil-photos {
+    position: absolute;
+    top: 46%;
+    left: 30%;
+    font-size: 13px;
+    color: #00cc00;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+}
+
+.menuProfil-photos:focus {
+    outline: none;
+}
+
+
+/* POSTES */
+
+.publication {
+    position: relative;
+    top: -10px;
+    left: 3%;
+    height: auto;
+    min-height: 80%;
+    max-height: 300%;
+    width: 104%;
+    background-color: var(--test2);
+    border-radius: 13px;
+    padding-bottom: 10px;
+}
+
+.publ {
+    position: relative;
+    margin-top: 30px;
+    margin-left: -35px;
+    height: auto;
+    min-height: 30%;
+    max-height: 300%;
+    width: 89%;
+    background-color: var(--color5);
+    left: 10%;
+    margin-bottom: 40px;
+    border-radius: 13px;
+    word-break: break-word;
+}
+
+.user_pub {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 65px;
+    background: transparent;
+}
+
+.user_photo_pub {
+    position: relative;
+    top: 10px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.user_name_pub {
+    position: absolute;
+    left: 10%;
+    top: 16px;
+    color: black;
+}
+
+.user_date_pub {
+    position: absolute;
+    left: 10%;
+    top: 27px;
+    font-size: 10px;
+    color: grey;
+}
+
+.user_pub_text {
+    position: relative;
+    top: 30px;
+    left: 10%;
+    width: 85%;
+    margin-bottom: 70px;
+    word-break: break-word;
+}
+
+.user_pub_img {
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+    height: 47%;
+    width: 80%;
+    left: 10%;
+    border-radius: 20px;
+}
+
+.user_pub_separateur {
+    position: relative;
+    bottom: 10px;
+    left: 10%;
+    width: 80%;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 2px 0px lightgray;
+}
+
+.user_pub_nbjaime {
+    position: relative;
+    bottom: 0px;
+    left: 15%;
+    width: 40px;
+    height: 15px;
+    background: transparent;
+}
+
+.user_pub_nbjaime:focus {
+    outline: none;
+}
+
+.user_pub_nbjaime img {
+    position: absolute;
+    bottom: 3px;
+}
+
+.user_pub_nbjaime p {
+    position: absolute;
+    right: 7px;
+    top: -18px;
+}
+
+.user_pub_nbcommentaire {
+    position: relative;
+    bottom: 15px;
+    left: 70%;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background: transparent;
+}
+
+.user_pub_nbcommentaire:focus {
+    outline: none;
+}
+
+.user_pub_nbcommentaire img {
+    position: relative;
+    right: 4px;
+    bottom: 3px;
+}
+
+.like {
+    position: relative;
+    bottom: 5px;
+    left: 12%;
+    width: 65px;
+    height: 25px;
+    border: none;
+    background: transparent;
+}
+
+.like:focus {
+    outline: none;
+}
+
+.like img {
+    position: relative;
+    left: -25px;
+}
+
+.like p {
+    position: relative;
+    top: -35px;
+    left: 10px;
+}
+
+.unlike {
+    position: relative;
+    bottom: 5px;
+    left: 12%;
+    width: 65px;
+    height: 25px;
+    border: none;
+    background: transparent;
+}
+
+.unlike:focus {
+    outline: none;
+}
+
+.unlike img {
+    position: relative;
+    left: -25px;
+}
+
+.unlike p {
+    position: relative;
+    top: -35px;
+    left: 10px;
+    color: var(--vert);
+}
+
+.user_pub_commentaire {
+    position: relative;
+    bottom: 5px;
+    margin-left: 300px;
+    width: 125px;
+    height: 25px;
+    border: none;
+    background: transparent;
+}
+
+.user_pub_commentaire img {
+    position: relative;
+    left: -50px;
+}
+
+.user_pub_commentaire p {
+    position: relative;
+    top: -35px;
+    left: 10px;
+    color: black;
+}
+
+.user_pub_commentaire a {
+    text-decoration: none;
+}
+
+
+/*   a propos  */
+
+.form_apropos {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    left: 27%;
+    height: 170px;
+    width: 350px;
+    border: 1px solid var(--vert);
+    border-radius: 5px;
+}
+
+.form_apropos_titre {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--vert);
+}
+
+.apropos_email {
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    font-size: 14px;
+}
+
+.apropos_email span {
+    color: gray;
+    font-weight: bold;
+}
+
+.apropos_nationalite {
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    font-size: 14px;
+}
+
+.apropos_nationalite span {
+    color: gray;
+    font-weight: bold;
+}
+
+.apropos_date {
+    position: absolute;
+    top: 75px;
+    left: 5px;
+    font-size: 14px;
+}
+
+.apropos_date span {
+    color: gray;
+    font-weight: bold;
+}
+
+.apropos_langue {
+    position: absolute;
+    top: 100px;
+    left: 5px;
+    font-size: 14px;
+}
+
+.apropos_langue span {
+    color: gray;
+    font-weight: bold;
+}
+
+.apropos_situation {
+    position: absolute;
+    top: 125px;
+    left: 5px;
+    font-size: 14px;
+}
+
+.apropos_situation span {
+    color: gray;
+    font-weight: bold;
+}
+
+
+/* amis */
+
+.form_amis {
+    position: relative;
+    margin-top: 60px;
+    left: 20%;
+    height: 100px;
+    width: 440px;
+    border: 1px solid black;
+    border-radius: 60px;
+    padding-left: 45px;
+    padding-right: 45px;
+    overflow: auto;
+    background: var(--color5);
+    box-shadow: 0px 3px 3px var(--color2);
+    white-space: nowrap;
+}
+
+.affiche_amis {
+    position: relative;
+    margin-left: 0px;
+    width: 90px;
+    height: 100%;
+}
+
+.affiche_amis:hover {
+    background: lightgray;
+}
+
+.affiche_amis img {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    border-radius: 100%;
+}
+
+.affiche_amis p {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* image */
+
+.form_img {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    height: 200px;
+    width: 89.1%;
+    border: none;
+    padding-left: 45px;
+    padding-right: 45px;
+    background: var(--color5);
+    box-shadow: 0px 3px 3px var(--color2);
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.form_img img {
+    position: relative;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.div_modifie {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    border: 2px solid var(--color1);
+    background: var(--color1);
+    border-radius: 15px;
+}
+
+.div_modifie h1 {
+    position: absolute;
+    left: 60px;
+    top: 5px;
+    color: var(--vert);
+    font-size: 17px;
+}
+
+.modifier_photo {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.changer_photo {
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    height: 30px;
+    width: 80px;
+    border: none;
+    background: var(--vert);
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.changer_photo:focus {
+    outline: none;
+}
+
+input[type="file"].photoProfilC {
+    display: none;
+}
+
+input[type="file"].photoProfilC+label {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    background-image: url("../img/person-bounding-box.png");
+    background-position: center;
+    background-size: 120px;
+    background-repeat: no-repeat;
+}
+
+input[type="file"].photoCouvC {
+    display: none;
+}
+
+input[type="file"].photoCouvC+label {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    background-image: url("../img/card-image.png");
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,377 @@
+:root {
+    --vert: rgb(23, 191, 99);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgroundMode);
+}
+
+header {
+    position: fixed;
+    background-color: var(--color4);
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px;
+    width: 100%;
+    height: 15px;
+    z-index: 1;
+    box-shadow: 0px 1px 3px lightgrey;
+}
+
+article {
+    position: absolute;
+    top: 8.5%;
+    height: 91.5%;
+    width: 55%;
+    left: 18.5%;
+}
+
+.msn {
+    position: absolute;
+    top: 40px;
+    right: -5%;
+    height: 87%;
+    width: 105%;
+    background-color: var(--color1);
+    border: none;
+    border-radius: 13px;
+}
+
+.user_pub {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+
+.user_photo_pub {
+    position: absolute;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.user_name_pub {
+    position: absolute;
+    left: 10%;
+    top: 6px;
+}
+
+.user_date_pub {
+    position: absolute;
+    left: 10%;
+    top: 17px;
+    font-size: 10px;
+    color: grey;
+}
+
+
+/*******************************************************************/
+
+
+/*----------------------------------------------*/
+
+.msn_title {
+    position: absolute;
+    top: 3%;
+    left: 4%;
+    width: 92%;
+    height: 11%;
+    border-bottom: 1px solid var(--vert);
+}
+
+.msn_title p {
+    position: absolute;
+    top: 0;
+    left: 1%;
+    font-size: 25px;
+    color: var(--vert);
+}
+
+.msn_text {
+    position: absolute;
+    top: 17%;
+    right: 4%;
+    width: 70%;
+    height: 71%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: var(--test2);
+}
+
+.msn_text_bloc {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 94%;
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.text_left {
+    position: relative;
+    top: 20px;
+    margin: 10px 10px;
+    width: auto;
+    max-width: 50%;
+    float: left;
+    padding: 10px;
+    background: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    left: 3%;
+    clear: both;
+    word-break: break-word;
+}
+
+.text_right {
+    position: relative;
+    top: 20px;
+    margin: 10px 10px;
+    width: auto;
+    max-width: 50%;
+    float: right;
+    padding: 10px;
+    background: var;
+    border: 1px solid var(--vert);
+    border-radius: 20px;
+    background: var(--vert);
+    right: 3%;
+    height: auto;
+    clear: both;
+    word-break: break-word;
+}
+
+.msn_chat {
+    position: absolute;
+    bottom: 2%;
+    left: 27%;
+    width: 55%;
+    height: 25px;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    resize: none;
+    text-align: center;
+    padding-top: 1%;
+    background: var(--color2);
+}
+
+.msn_chat:focus {
+    outline: none;
+}
+
+.msn_emojie {
+    position: absolute;
+    bottom: 3.9%;
+    right: 19%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--vert);
+    border-radius: 100%;
+}
+
+.msn_envoyer {
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    width: 10%;
+    height: 35px;
+    border: 1px solid var(--vert);
+    border-radius: 20px;
+    background: var(--vert);
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.msn_envoyer:focus {
+    outline: none;
+}
+
+.seemore_btn {
+    background: #3498db;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    border: 0;
+    outline: none !important;
+    margin: 10px auto;
+    display: flex;
+    box-shadow: 2px 2px 4px rgba(33, 33, 33, .4);
+    transition: all .5s ease;
+}
+
+.seemore_btn:hover {
+    transition: all .5s ease;
+    box-shadow: 2px 2px 4px rgba(33, 33, 33, .4);
+}
+
+.seemore_btn_maske {
+    display: none;
+}
+
+.search_amis {
+    position: absolute;
+    top: 18%;
+    left: 2%;
+    width: 20%;
+    height: 5%;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    background: var(--color2);
+    color: white;
+    opacity: 0.9;
+    padding-left: 2%;
+    font-size: 10px;
+}
+
+.search_amis:focus {
+    outline: none;
+}
+
+.encadrage {
+    position: absolute;
+    top: 28%;
+    left: 1%;
+    width: 25%;
+    height: 60%;
+}
+
+.msn_amis {
+    position: relative;
+    margin-top: 10px;
+    left: 2%;
+    width: 90%;
+    height: 10%;
+    border: 1px solid var(--color2);
+    border-radius: 30px;
+    background: var(--color2);
+    color: white;
+    opacity: 0.9;
+}
+
+.ami_enligne {
+    position: absolute;
+    top: 34%;
+    right: 10%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid lightgray;
+    background: green;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.ami_horligne {
+    position: absolute;
+    top: 34%;
+    right: 10%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid lightgray;
+    background: red;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.msn_amis img {
+    position: absolute;
+    top: 9%;
+    left: 2%;
+    border-radius: 100%;
+}
+
+.msn_amis p {
+    position: absolute;
+    top: -6%;
+    left: 23%;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.searching_msg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.divMsg {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 30%;
+    height: 70%;
+    border: 2px solid gray;
+    background: gray;
+    border-radius: 15px;
+}
+
+.sortirPop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.sortirPop button {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    border: none;
+    background: transparent;
+}
+
+.sortirPop button:focus {
+    outline: none
+}
+
+.nameMsg {
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white
+}
+
+.nbMsg {
+    position: absolute;
+    left: 30px;
+    font-size: 12px;
+    top: 30px;
+}
+
+.affichageMsg {
+    position: relative;
+    margin-top: 50px;
+    left: 0;
+    width: 100%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+.msgRecher {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 123px;
+    left: 170px;
+    border: none;
+    background: transparent;
+}
+
+.msgRecher:focus {
+    outline: none
+}

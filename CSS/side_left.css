@@ -1,0 +1,73 @@
+:root {
+    --vert: rgb(23, 191, 99);
+}
+
+.side_bar {
+    background-color: var(--backgroundmode);
+    margin-top: 55px;
+    padding-top: 50px;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    box-shadow: 1px 1px 2px lightgrey;
+}
+
+.profile_image {
+    position: absolute;
+    top: 6%;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 35px;
+}
+
+.side_bar h4 {
+    position: absolute;
+    top: 7%;
+    left: 40%;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.img_icon {
+    position: relative;
+    width: 30px;
+    height: 23px;
+    margin-left: 13px;
+    margin-top: 7px;
+}
+
+.img_icon2 {
+    position: relative;
+    width: 24px;
+    height: 23px;
+    margin-left: 16px;
+    margin-top: 7px;
+}
+
+.side_bar a {
+    position: relative;
+    top: 20%;
+    width: 63%;
+    margin-left: 10px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 50px;
+    margin-bottom: 12px;
+    height: 38px;
+}
+
+.side_bar span {
+    position: relative;
+    margin-left: 15px;
+    top: -5.5px;
+}
+
+.side_bar a:hover {
+    border-spacing: 10px;
+    background-color: var(--vert);
+}

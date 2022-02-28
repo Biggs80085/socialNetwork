@@ -1,0 +1,330 @@
+:root {
+    --vert: rgb(23, 191, 99);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgroundMode);
+}
+
+header {
+    position: fixed;
+    background-color: var(--color4);
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px;
+    width: 100%;
+    height: 15px;
+    z-index: 1;
+    box-shadow: 0px 1px 3px lightgrey;
+}
+
+article {
+    position: absolute;
+    top: 8.5%;
+    height: 91.5%;
+    width: 55%;
+    left: 18.5%;
+}
+
+.publication {
+    position: relative;
+    margin-top: 0px;
+    height: auto;
+    min-height: 40%;
+    max-height: 300%;
+    width: 89%;
+    background-color: var(--color1);
+    left: 10%;
+    border: none;
+    border-radius: 13px;
+    word-break: break-word;
+}
+
+.post {
+    position: relative;
+    margin: 10px;
+    left: 30px;
+    width: 620px;
+    height: auto;
+    min-height: 100px;
+    max-height: 300%;
+    border-radius: 10px;
+}
+
+.comment {
+    position: relative;
+    margin: 10px;
+    left: 80px;
+    width: 520px;
+    height: auto;
+    min-height: 0px;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+.champ_comment {
+    position: relative;
+    margin: 0;
+    width: 515px;
+    height: auto;
+    min-height: 80px;
+    max-height: 400px;
+}
+
+.comment_text {
+    position: relative;
+    margin-left: 60px;
+    margin-top: -30px;
+    width: auto;
+    min-width: 30px;
+    max-width: 300%;
+    height: auto;
+    min-height: 20px;
+    max-height: 300%;
+    border: 1px solid var(--vert);
+    border-radius: 30px;
+    background: var(--vert)
+}
+
+.champ_comment img {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    border-radius: 100%;
+}
+
+.comment_comment {
+    position: relative;
+    top: 0px;
+    border-radius: 100%;
+    padding-left: 20px;
+    color: white;
+}
+
+.publication textarea {
+    position: relative;
+    margin: 10px;
+    padding-left: 20px;
+    padding-top: 5px;
+    resize: none;
+    left: 10%;
+    height: 25px;
+    width: 73%;
+    border-radius: 30px;
+    background: var(--test2);
+}
+
+.publication textarea:focus {
+    outline: none;
+}
+
+input[type="submit"].envoie {
+    display: none;
+}
+
+input[type="submit"].envoie+label {
+    position: absolute;
+    bottom: 18px;
+    right: 100px;
+    height: 25px;
+    width: 25px;
+    background-image: url("../img/play.png");
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+.envoie:focus {
+    outline: none;
+}
+
+.user_pub {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 65px;
+    background: transparent;
+}
+
+.user_photo_pub {
+    position: relative;
+    top: 10px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.user_name_pub {
+    position: absolute;
+    left: 10%;
+    top: 16px;
+    color: black;
+}
+
+.user_date_pub {
+    position: absolute;
+    left: 10%;
+    top: 27px;
+    font-size: 10px;
+    color: grey;
+}
+
+.user_pub_text {
+    position: relative;
+    top: 30px;
+    left: 10%;
+    width: 85%;
+    margin-bottom: 70px;
+    word-break: break-word;
+}
+
+.user_pub_img {
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+    height: 47%;
+    width: 80%;
+    left: 10%;
+    border-radius: 20px;
+}
+
+.user_pub_separateur {
+    position: relative;
+    bottom: 10px;
+    left: 10%;
+    width: 80%;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 2px 0px lightgray;
+}
+
+.user_pub_nbjaime {
+    position: relative;
+    bottom: 0px;
+    left: 15%;
+    width: 40px;
+    height: 15px;
+    background: transparent;
+}
+
+.user_pub_nbjaime:focus {
+    outline: none;
+}
+
+.user_pub_nbjaime img {
+    position: absolute;
+    bottom: 3px;
+}
+
+.user_pub_nbjaime p {
+    position: absolute;
+    right: 7px;
+    top: -18px;
+}
+
+.user_pub_nbcommentaire {
+    position: relative;
+    bottom: 15px;
+    left: 70%;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background: transparent;
+}
+
+.user_pub_nbcommentaire:focus {
+    outline: none;
+}
+
+.user_pub_nbcommentaire img {
+    position: relative;
+    right: 4px;
+    bottom: 3px;
+}
+
+.user_pub_nbcommentaire p {
+    position: absolute;
+    right: -10px;
+    top: -20px;
+}
+
+.likes {
+    position: relative;
+    bottom: 5px;
+    left: 12%;
+    width: 65px;
+    height: 25px;
+    border: none;
+    background: transparent;
+}
+
+.likes:focus {
+    outline: none;
+}
+
+.likes img {
+    position: relative;
+    left: -25px;
+}
+
+.likes p {
+    position: relative;
+    top: -35px;
+    left: 10px;
+}
+
+.unlikes {
+    position: relative;
+    bottom: 5px;
+    left: 12%;
+    width: 65px;
+    height: 25px;
+    border: none;
+    background: transparent;
+}
+
+.unlikes:focus {
+    outline: none;
+}
+
+.unlikes img {
+    position: relative;
+    left: -25px;
+}
+
+.unlikes p {
+    position: relative;
+    top: -35px;
+    left: 10px;
+    color: var(--vert);
+}
+
+.user_pub_commentaire {
+    position: relative;
+    bottom: 33px;
+    margin-left: 300px;
+    width: 125px;
+    height: 25px;
+    border: none;
+    background: transparent;
+}
+
+.user_pub_commentaire:focus {
+    outline: none;
+}
+
+.user_pub_commentaire img {
+    position: relative;
+    left: -50px;
+}
+
+.user_pub_commentaire p {
+    position: relative;
+    top: -35px;
+    left: 10px;
+    color: black;
+}
+
+.user_pub_commentaire a {
+    text-decoration: none;
+}
